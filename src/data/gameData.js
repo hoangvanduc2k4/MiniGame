@@ -150,17 +150,18 @@ export const SPECIAL_QUESTIONS = [...REWARD_QUESTIONS, ...PENALTY_QUESTIONS];
 
 // Team definitions
 export const TEAMS = [
-  { id: 1, name: "Team 1", color: "#FF6B6B" },
-  { id: 2, name: "Team 2", color: "#4ECDC4" },
-  { id: 3, name: "Team 3", color: "#45B7D1" },
-  { id: 4, name: "Team 4", color: "#FFA07A" },
-  { id: 5, name: "Team 6", color: "#98D8C8" },
-  { id: 6, name: "Team 7", color: "#F7DC6F" },
-  { id: 7, name: "Team 8", color: "#BB8FCE" }
+  { id: 1, name: "Team 1", color: "#DA251D" },
+  { id: 2, name: "Team 2", color: "#A50F08" },
+  { id: 3, name: "Team 3", color: "#FFD700" },
+  { id: 4, name: "Team 4", color: "#E0A500" },
+  { id: 5, name: "Team 6", color: "#C8102E" },
+  { id: 6, name: "Team 7", color: "#8B0000" },
+  { id: 7, name: "Team 8", color: "#FF9900" }
 ];
 
-// Icons/Emojis for question cards
+// Icons/Emojis for question cards - Patriotic/Ideological themes
 export const QUESTION_ICONS = [
-  "🎯", "🎪", "🎨", "🎭", "🎬", "🎮", "🎲", "🎰",
-  "🎸", "🎹", "📚", "🔥", "⭐", "💎"
+  "🇻🇳", "🚩", "☭", "⭐", "🕊️", "📜", "🖋️", "🏫",
+  "📖", "✊", "🏗️", "🚜", "🏭", "⚓"
 ];
+

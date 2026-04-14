@@ -24,12 +24,13 @@
 .modal-content {
   background: white;
   border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   max-width: 600px;
   width: 90%;
   max-height: 90vh;
   overflow-y: auto;
   animation: slideUp 0.3s ease;
+  border: 1px solid var(--accent-gold);
 }
 
 @keyframes slideUp {
@@ -45,12 +46,14 @@
 
 .modal-header {
   padding: 20px;
-  color: white;
+  background: linear-gradient(135deg, #DA251D 0%, #8B0000 100%);
+  color: var(--primary-gold);
   font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 20px 20px 0 0;
+  border-bottom: 2px solid var(--accent-gold);
 }
 
 .modal-header h2 {
@@ -147,9 +150,9 @@
 
 .btn-confirm {
   padding: 12px 30px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #DA251D 0%, #8B0000 100%);
   color: white;
-  border: none;
+  border: 1px solid var(--primary-gold);
   border-radius: 8px;
   font-weight: bold;
   font-size: 1em;
@@ -159,7 +162,8 @@
 
 .btn-confirm:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 5px 15px rgba(218, 37, 29, 0.4);
+  color: var(--primary-gold);
 }
 
 .star-power-section {

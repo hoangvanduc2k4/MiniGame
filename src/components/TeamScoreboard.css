@@ -1,16 +1,18 @@
 .scoreboard {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #DA251D 0%, #8B0000 100%);
   padding: 30px;
   border-radius: 15px;
   margin-bottom: 30px;
-  color: white;
+  color: var(--primary-gold);
+  border: 2px solid var(--accent-gold);
 }
 
 .scoreboard h2 {
   text-align: center;
   margin-bottom: 25px;
   font-size: 1.8em;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  color: var(--primary-gold);
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
 .teams-container {
@@ -21,25 +23,28 @@
 }
 
 .team-score-card {
-  background: rgba(255,255,255,0.1);
+  background: rgba(0, 0, 0, 0.4);
   border: 3px solid;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease;
   transform: scale(1);
+  border-color: rgba(255, 215, 0, 0.2) !important;
 }
 
 .team-score-card:hover {
   transform: scale(1.05);
-  background: rgba(255,255,255,0.15);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+  border-color: var(--accent-gold) !important;
 }
 
 .team-score-card.active {
-  background: rgba(255,255,255,0.25);
-  box-shadow: 0 0 20px rgba(255,255,255,0.5);
+  background: rgba(218, 37, 29, 0.3);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
   transform: scale(1.08);
+  border-color: var(--primary-gold) !important;
 }
 
 .team-color-bar {

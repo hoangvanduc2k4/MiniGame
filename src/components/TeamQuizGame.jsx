@@ -5,6 +5,9 @@ import TeamScoreboard from './TeamScoreboard'
 import QuestionBoard from './QuestionBoard'
 import QuestionModal from './QuestionModal'
 import LeaderboardScreen from './LeaderboardScreen'
+import bacHoReal from '../assets/bac_ho_real.jpg'
+import cpvLogo from '../assets/cpv_logo.png'
+
 
 const TeamQuizGame = () => {
   const [gameStarted, setGameStarted] = useState(false)
@@ -235,8 +238,13 @@ const TeamQuizGame = () => {
     return (
       <div className="game-container start-view">
         <div className="start-screen">
-          <h1>🎮 Team Quiz Game</h1>
-          <p>Trò chơi quiz đội nhóm - 7 đội thi đua</p>
+          <div className="portrait-container">
+            <img src={bacHoReal} alt="Chủ tịch Hồ Chí Minh" className="bac-ho-portrait" />
+          </div>
+          <h1>Tư tưởng Hồ Chí Minh</h1>
+          <p className="thematic-quote">"Không có gì quý hơn độc lập, tự do"</p>
+          <p>Trò chơi quiz đội nhóm - Thử thách kiến thức</p>
+
           
           <div className="teams-preview">
             <h3>Các đội tham gia:</h3>
@@ -271,9 +279,13 @@ const TeamQuizGame = () => {
 
   return (
     <div className="game-container">
+      <div className="game-watermark">
+        <img src={cpvLogo} alt="ĐCSVN" />
+      </div>
       <header className="game-header">
         <div className="header-content">
-          <h1>🎮 Team Quiz Game</h1>
+          <h1>Tư tưởng Hồ Chí Minh</h1>
+
           <div className="game-controls">
             <button className="btn-reset" onClick={handleResetGame}>
               ↺ Reset

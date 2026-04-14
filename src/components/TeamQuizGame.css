@@ -2,6 +2,23 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.game-watermark {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.game-watermark img {
+  width: 100%;
 }
 
 .start-view {
@@ -11,37 +28,69 @@
   min-height: 100vh;
 }
 
+.portrait-container {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--accent-gold);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.bac-ho-portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.thematic-quote {
+  font-style: italic;
+  font-size: 1.4em !important;
+  color: var(--primary-gold) !important;
+  margin-bottom: 20px !important;
+  font-family: serif;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+
 .start-screen {
   text-align: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(218, 37, 29, 0.8)), url('../assets/patriotic_bg.png');
+  background-size: cover;
+  background-position: center;
   padding: 50px;
   border-radius: 20px;
   max-width: 700px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  border: 2px solid var(--accent-gold);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
 }
 
 .start-screen h1 {
   font-size: 3em;
   margin-bottom: 10px;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  color: var(--primary-gold);
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
 }
 
 .start-screen > p {
   font-size: 1.2em;
-  color: rgba(255,255,255,0.9);
+  color: white;
   margin-bottom: 30px;
+  font-weight: 500;
 }
 
 .teams-preview {
-  background: rgba(255,255,255,0.1);
+  background: rgba(0, 0, 0, 0.3);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 30px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
 }
 
 .teams-preview h3 {
-  color: white;
+  color: var(--primary-gold);
   margin-bottom: 15px;
 }
 
@@ -62,15 +111,16 @@
 }
 
 .rules {
-  background: rgba(255,255,255,0.1);
+  background: rgba(0, 0, 0, 0.3);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 30px;
   text-align: left;
+  border: 1px solid rgba(255, 215, 0, 0.1);
 }
 
 .rules h3 {
-  color: white;
+  color: var(--primary-gold);
   margin-bottom: 15px;
   text-align: center;
 }
@@ -87,29 +137,33 @@
 }
 
 .btn-start {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, #FFD700 0%, #DA251D 100%);
   color: white;
-  border: none;
+  border: 2px solid var(--primary-gold);
   padding: 15px 50px;
   font-size: 1.2em;
   font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 5px 20px rgba(245, 87, 108, 0.4);
+  transition: all 0.3s;
+  box-shadow: 0 5px 20px rgba(218, 37, 29, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .btn-start:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(245, 87, 108, 0.6);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 30px rgba(255, 215, 0, 0.6);
+  color: var(--primary-gold);
 }
 
 .game-header {
   margin-bottom: 30px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #DA251D 0%, #8B0000 100%);
   padding: 20px;
   border-radius: 10px;
   color: white;
+  border-bottom: 3px solid var(--accent-gold);
 }
 
 .header-content {
@@ -121,6 +175,7 @@
 .header-content h1 {
   margin: 0;
   font-size: 2em;
+  color: var(--primary-gold);
 }
 
 .game-controls {
@@ -129,19 +184,21 @@
 }
 
 .btn-reset {
-  background: #FF6B6B;
-  color: white;
+  background: var(--accent-gold);
+  color: #8B0000;
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: all 0.3s;
 }
 
 .btn-reset:hover {
-  background: #FF5252;
+  background: white;
+  transform: rotate(-10deg);
 }
+
 
 .notification-overlay {
   position: fixed;
