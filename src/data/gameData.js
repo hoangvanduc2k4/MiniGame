@@ -3,113 +3,113 @@
 export const SAMPLE_QUESTIONS = [
   {
     id: 1,
-    question: "Theo Hồ Chí Minh, văn hóa có mối quan hệ như thế nào với kinh tế và chính trị?",
+    question: "Theo Hồ Chí Minh, mục đích cuối cùng của việc loài người sáng tạo và phát minh ra ngôn ngữ, chữ viết, đạo đức, pháp luật... (văn hóa) là gì?",
     options: [
-      "Văn hóa đứng ngoài kinh tế và chính trị",
-      "Văn hóa là một phần của đời sống xã hội, nằm trong kinh tế và chính trị",
-      "Văn hóa chỉ phục vụ kinh tế",
-      "Văn hóa quan trọng hơn kinh tế"
+      "Để thể hiện sự văn minh của một dân tộc.",
+      "Để thúc đẩy sự tăng trưởng kinh tế.",
+      "Vì lẽ sinh tồn cũng như mục đích của cuộc sống.",
+      "Để phục vụ nhu cầu giải trí của con người."
     ],
-    correctAnswer: "Văn hóa là một phần của đời sống xã hội, nằm trong kinh tế và chính trị"
+    correctAnswer: "Vì lẽ sinh tồn cũng như mục đích của cuộc sống."
   },
   {
     id: 2,
-    question: "Hồ Chí Minh khẳng định \"Văn hóa soi đường cho quốc dân đi\". Câu nói này nhấn mạnh vai trò gì của văn hóa?",
+    question: "Câu nói nào của Hồ Chí Minh khẳng định vai trò định hướng, dẫn dắt của văn hóa đối với sự nghiệp xây dựng và bảo vệ tổ quốc?",
     options: [
-      "Chỉ giải trí",
-      "Dẫn dắt và định hướng cho sự phát triển của dân tộc",
-      "Chỉ trang trí xã hội",
-      "Chỉ thuộc về nghệ sĩ"
+      "“Văn hóa là một mặt trận”.",
+      "“Văn hóa soi đường cho quốc dân đi”.",
+      "“Văn hóa phải thâm nhập vào chính trị”.",
+      "“Văn hóa là động lực của cách mạng”."
     ],
-    correctAnswer: "Dẫn dắt và định hướng cho sự phát triển của dân tộc"
+    correctAnswer: "“Văn hóa soi đường cho quốc dân đi”."
   },
   {
     id: 3,
-    question: "Nền văn hóa mới theo tư tưởng Hồ Chí Minh có ba tính chất chính. Tính \"dân tộc\" được hiểu là gì?",
+    question: "Nền văn hóa mới mà Hồ Chí Minh xác định xây dựng gồm có 3 đặc trưng (tính chất) cốt lõi nào?",
     options: [
-      "Giữ nguyên tất cả phong tục cũ",
-      "Giữ gìn bản sắc dân tộc đồng thời tiếp thu tinh hoa văn hóa nhân loại",
-      "Học theo hoàn toàn văn hóa nước ngoài",
-      "Chỉ tập trung vào văn hóa cổ"
+      "Dân tộc – Khoa học – Đại chúng.",
+      "Dân tộc – Hiện đại – Nhân văn.",
+      "Độc lập – Tự do – Hạnh phúc.",
+      "Truyền thống – Tiến bộ – Hội nhập."
     ],
-    correctAnswer: "Giữ gìn bản sắc dân tộc đồng thời tiếp thu tinh hoa văn hóa nhân loại"
+    correctAnswer: "Dân tộc – Khoa học – Đại chúng."
   },
   {
     id: 4,
-    question: "\"Đạo đức là gốc\" theo Hồ Chí Minh là nguyên tắc quan trọng trong việc xây dựng cái gì?",
+    question: "Hiện tượng “Fake news” (tin giả) và các nội dung mê tín dị đoan trên mạng xã hội hiện nay vi phạm trực tiếp tính chất nào của nền văn hóa mới?",
     options: [
-      "Kinh tế thị trường",
-      "Con người mới và nền văn hóa mới",
-      "Chỉ chính trị",
-      "Chỉ quân sự"
+      "Tính Dân tộc.",
+      "Tính Khoa học.",
+      "Tính Đại chúng.",
+      "Tính Nhân văn."
     ],
-    correctAnswer: "Con người mới và nền văn hóa mới"
+    correctAnswer: "Tính Khoa học."
   },
   {
     id: 5,
-    question: "Hiện tượng nào sau đây là biểu hiện \"lệch văn hóa\" rõ nét trên mạng xã hội?",
+    question: "Trào lưu “Flexing” (khoe khoang tài sản xa xỉ quá mức) và lối sống thực dụng trên mạng xã hội đi ngược lại đức tính nào trong tư tưởng đạo đức Hồ Chí Minh?",
     options: [
-      "Chia sẻ kiến thức học tập",
-      "Livestream chửi bới, xúc phạm danh dự người khác bằng ngôn ngữ thô tục",
-      "Đăng ảnh du lịch",
-      "Chia sẻ công thức nấu ăn"
+      "Lòng dũng cảm và kiên định.",
+      "Tinh thần tự lực tự cường.",
+      "Đức tính Cần và Kiệm.",
+      "Ý chí vượt khó vươn lên."
     ],
-    correctAnswer: "Livestream chửi bới, xúc phạm danh dự người khác bằng ngôn ngữ thô tục"
+    correctAnswer: "Đức tính Cần và Kiệm."
   },
   {
     id: 6,
-    question: "Lối sống khoe mẽ giàu sang, ăn chơi xa xỉ và coi thường lao động trên mạng xã hội đi ngược với nguyên tắc nào của Hồ Chí Minh?",
+    question: "Hồ Chí Minh coi loại “giặc” nào là nguồn gốc sinh ra các căn bệnh lãng phí, tham ô, danh lợi và sự lệch lạc đạo đức trên mạng xã hội hiện nay?",
     options: [
-      "Tính khoa học",
-      "Đức tính Cần kiệm và lối sống giản dị",
-      "Tính đại chúng",
-      "Tính dân tộc"
+      "Giặc ngoại xâm.",
+      "Giặc đói.",
+      "Giặc dốt.",
+      "Giặc nội xâm (Chủ nghĩa cá nhân)."
     ],
-    correctAnswer: "Đức tính Cần kiệm và lối sống giản dị"
+    correctAnswer: "Giặc nội xâm (Chủ nghĩa cá nhân)."
   },
   {
     id: 7,
-    question: "Việc lan truyền tin giả và mê tín dị đoan trên mạng xã hội vi phạm tính chất nào của nền văn hóa mới?",
+    question: "Hành vi “Bạo lực mạng” (cyberbullying), mạt sát cá nhân đi ngược lại phẩm chất đạo đức quan trọng nào trong tư tưởng Hồ Chí Minh?",
     options: [
-      "Tính dân tộc",
-      "Tính khoa học",
-      "Tính đại chúng",
-      "Tính giải trí"
+      "Sự trung thành vô hạn với tổ quốc.",
+      "Tình thương yêu con người bao la.",
+      "Tinh thần ham học hỏi suốt đời.",
+      "Ý chí quyết chiến quyết thắng."
     ],
-    correctAnswer: "Tính khoa học"
+    correctAnswer: "Tình thương yêu con người bao la."
   },
   {
     id: 8,
-    question: "Theo tư tưởng Hồ Chí Minh, giải pháp căn bản để khắc phục lệch văn hóa trên mạng xã hội là gì?",
+    question: "Giải pháp dùng AI và thuật toán để đẩy các nội dung “Người tốt việc tốt” lên xu hướng (Trending) là biểu hiện của phương châm nào?",
     options: [
-      "Cấm hoàn toàn mạng xã hội",
-      "Vừa xây dựng giá trị tốt đẹp vừa kiên quyết đấu tranh với cái xấu",
-      "Để mọi người tự do hoàn toàn",
-      "Chỉ tập trung vào phát triển kinh tế"
+      "Chỉ tập trung vào việc xử phạt hành chính.",
+      "“Lấy cái đẹp dẹp cái xấu” (Xây đi đôi với Chống).",
+      "Hội nhập văn hóa thế giới mù quáng.",
+      "Xây dựng tâm lý tự ti trước công nghệ."
     ],
-    correctAnswer: "Vừa xây dựng giá trị tốt đẹp vừa kiên quyết đấu tranh với cái xấu"
+    correctAnswer: "“Lấy cái đẹp dẹp cái xấu” (Xây đi đôi với Chống)."
   },
   {
     id: 9,
-    question: "\"Mỗi công dân mạng là một chiến sĩ văn hóa\" có nghĩa là gì?",
+    question: "Để không bị “lệch chuẩn” khi tiếp xúc với các trào lưu văn hóa nước ngoài, chúng ta cần tuân thủ nguyên tắc nào của Hồ Chí Minh?",
     options: [
-      "Phải trở thành KOL nổi tiếng",
-      "Biết tự sàng lọc thông tin, dám lên tiếng với cái xấu và lan tỏa giá trị tốt",
-      "Chỉ đăng ảnh đẹp",
-      "Chỉ xem video giải trí"
+      "Tiếp thu toàn bộ để nhanh chóng hiện đại hóa.",
+      "Đóng cửa hoàn toàn để bảo vệ bản sắc truyền thống.",
+      "Tiếp thu có chọn lọc tinh hoa nhân loại, lấy văn hóa dân tộc làm gốc.",
+      "Chỉ học tập văn hóa phương Đông vì sự tương đồng lịch sử."
     ],
-    correctAnswer: "Biết tự sàng lọc thông tin, dám lên tiếng với cái xấu và lan tỏa giá trị tốt"
+    correctAnswer: "Tiếp thu có chọn lọc tinh hoa nhân loại, lấy văn hóa dân tộc làm gốc."
   },
   {
     id: 10,
-    question: "Hội nhập văn hóa theo Hồ Chí Minh trong bối cảnh mạng xã hội phải thực hiện như thế nào?",
+    question: "Theo tư tưởng Hồ Chí Minh, để làm sạch không gian mạng, mỗi công dân mạng cần có tinh thần trách nhiệm như thế nào?",
     options: [
-      "Học theo hết tất cả trào lưu nước ngoài",
-      "Tiếp thu tinh hoa thế giới một cách có chọn lọc, giữ vững bản sắc dân tộc",
-      "Không tiếp thu gì từ nước ngoài",
-      "Chỉ giữ nguyên văn hóa truyền thống"
+      "Chỉ nên im lặng và lướt qua các nội dung xấu để tránh rắc rối.",
+      "Trở thành một “chiến sĩ văn hóa”: biết sàng lọc thông tin, lan tỏa cái đẹp và dũng cảm report cái xấu.",
+      "Tích cực tranh luận, chửi bới lại những người có ý kiến trái chiều.",
+      "Chỉ chia sẻ những thông tin liên quan đến lợi ích cá nhân mình."
     ],
-    correctAnswer: "Tiếp thu tinh hoa thế giới một cách có chọn lọc, giữ vững bản sắc dân tộc"
+    correctAnswer: "Trở thành một “chiến sĩ văn hóa”: biết sàng lọc thông tin, lan tỏa cái đẹp và dũng cảm report cái xấu."
   }
 ];
 
