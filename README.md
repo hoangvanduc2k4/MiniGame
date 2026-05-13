@@ -1,196 +1,88 @@
-# 🎮 Team Quiz Game
+# 🚩 BẢN LĨNH CÔNG NHÂN - Mini Game Trắc Nghiệm Lý Luận
 
-Một ứng dụng quiz tương tác cho 7 đội chơi, xây dựng bằng React + Vite.
+Một ứng dụng mini-game trắc nghiệm tương tác về chủ đề **Sứ mệnh lịch sử của Giai cấp công nhân** và **Chủ nghĩa Xã hội Khoa học**, được xây dựng bằng React + Vite.
 
-## 📋 Tính năng
+## 🌟 Tổng quan
+Dự án này là một ứng dụng học tập tương tác được thiết kế để hỗ trợ sinh viên ôn tập kiến thức môn học **Chủ nghĩa Xã hội Khoa học** (đặc biệt là nội dung về Giai cấp công nhân). Thay vì các bài trắc nghiệm truyền thống khô khan, ứng dụng sử dụng cơ chế lật thẻ bài (Card Flip) giúp tăng tính hấp dẫn và khả năng ghi nhớ.
 
-✅ **7 đội chơi** - Quản lý điểm số tự động cho mỗi đội
-✅ **14 câu hỏi** - 10 câu MCQ thường + 4 câu đặc biệt
-✅ **Chọn đội bất kỳ** - Không bắt buộc theo thứ tự  
-✅ **Hiệu ứng đặc biệt** - 2 câu +1 điểm, 2 câu -1 điểm  
-✅ **Lưu dữ liệu** - localStorage giữ điểm khi reload  
-✅ **UI đẹp & responsive** - Hoạt động trên desktop & mobile
+## 🚀 Tính năng nổi bật
+- **Giao diện Premium**: Thiết kế chuyên nghiệp với tông màu đỏ cách mạng, hiệu ứng Glassmorphism và các hiệu ứng chuyển cảnh mượt mà.
+- **Cơ chế Lật thẻ (Card Flip)**: Hệ thống 10 thẻ câu hỏi ẩn dưới các biểu tượng (icons) sinh động, tạo sự tò mò cho người học.
+- **Hệ thống Giải thích Chi tiết**: Sau mỗi câu hỏi đúng, hệ thống cung cấp phần giải thích chuyên sâu giúp củng cố kiến thức ngay lập tức.
+- **Đánh giá Năng lực**: Tổng kết điểm số cuối game kèm theo những nhận xét khích lệ dựa trên kết quả đạt được.
+- **Thiết kế Responsive**: Hoạt động hoàn hảo trên mọi thiết bị: Desktop, Tablet và Mobile.
 
 ## 🎯 Luật chơi
+1. **Khởi đầu**: Nhấn nút **"BẮT ĐẦU NHIỆM VỤ"** tại màn hình chính.
+2. **Thử thách**: Chọn một trong 10 thẻ bài trên màn hình để mở câu hỏi trắc nghiệm tương ứng.
+3. **Chinh phục**:
+   - Chọn đáp án mà đồng chí cho là đúng.
+   - Nếu chọn sai: Có thể thử lại cho đến khi tìm ra đáp án đúng (tính kiên trì cách mạng).
+   - Nếu chọn đúng: Hệ thống sẽ hiển thị bảng giải thích chi tiết.
+4. **Về đích**: Hoàn thành toàn bộ 10 thẻ bài để xem bảng điểm tổng kết và xếp hạng năng lực lý luận.
 
-1. Click **"BẮT ĐẦU CHƠI"** để khởi động game
-2. Chọn một trong 7 đội chơi (click card điểm bảng)
-3. Click vào câu hỏi bất kỳ (1-14) để mở
-4. **Trả lời đúng**: +1 điểm (hoặc +2 nếu dùng ⭐)
-5. **Trả lời sai**: -1 điểm, câu hỏi vẫn mở cho đội khác chọn lại
-6. **4 câu Special** (11-14 theo vị trí ngẫu nhiên):
-   - 2 câu thưởng: +1 điểm tự động
-   - 2 câu phạt: -1 điểm tự động
-7. **Sao Power-Up** ⭐: Mỗi đội 1 sao, dùng 1 lần
-   - Đúng + sao: +2 thay vì +1
-   - Sai + sao: vẫn -1 (sao bị lãng phí)
-8. Điểm được lưu tự động, reload không mất dữ liệu
+## 🛠️ Công nghệ sử dụng
+- **React 18**: Thư viện UI mạnh mẽ.
+- **Vite**: Công cụ build cực nhanh cho dự án web hiện đại.
+- **Vanilla CSS**: Hệ thống style tùy chỉnh hoàn toàn (Socialist Design System).
+- **LocalStorage**: (Tùy chọn) Hỗ trợ lưu trữ trạng thái người chơi.
 
-## 🚀 Cài đặt & Chạy
+## 💻 Cài đặt và Chạy thử
 
 ### Yêu cầu
-- Node.js >= 16
+- Node.js phiên bản 16 trở lên.
 
-### Bước 1: Cài dependencies
-```bash
-npm install
+### Các bước thực hiện
+1. Clone repository hoặc tải mã nguồn về máy.
+2. Mở terminal tại thư mục dự án và cài đặt dependencies:
+   ```bash
+   npm install
+   ```
+3. Khởi chạy môi trường phát triển:
+   ```bash
+   npm run dev
+   ```
+4. Truy cập trình duyệt tại địa chỉ: `http://localhost:5173`
+
+## 📂 Cấu trúc dự án
+```text
+src/
+├── components/
+│   ├── CardFlipGame.jsx      # Logic chính của trò chơi
+│   ├── CardFlipGame.css      # Giao diện và hiệu ứng
+│   └── ...                   # Các component phụ khác
+├── data/
+│   └── gameData.js           # Bộ câu hỏi và cấu hình game
+├── App.jsx                   # Entry point của ứng dụng
+└── main.jsx                  # Khởi tạo React
 ```
 
-### Bước 2: Chạy dev server
-```bash
-npm run dev
-```
-Truy cập: `http://localhost:5173`
-
-### Bước 3: Build cho production
-```bash
-npm run build
-```
-
-## 📝 Thay đổi câu hỏi
-
-### Thay MCQ questions (Câu 1-10)
-
-Mở file `src/data/gameData.js` và cập nhật mảng `SAMPLE_QUESTIONS`:
+## 📝 Tùy chỉnh bộ câu hỏi
+Để thay đổi nội dung câu hỏi hoặc đáp án, hãy truy cập file `src/data/gameData.js` và chỉnh sửa mảng `SAMPLE_QUESTIONS`:
 
 ```javascript
 export const SAMPLE_QUESTIONS = [
   {
     id: 1,
-    question: "Câu hỏi của bạn?",
-    options: ["Đáp án A", "Đáp án B", "Đáp án C", "Đáp án D"],
-    correctAnswer: "Đáp án A"
+    question: "Nội dung câu hỏi của bạn?",
+    options: [
+      "Đáp án A",
+      "Đáp án B",
+      "Đáp án C",
+      "Đáp án D"
+    ],
+    correctAnswer: "Đáp án A",
+    explanation: "Phần giải thích chi tiết cho câu hỏi này..."
   },
-  // ... thêm 9 câu nữa
+  // ... tiếp tục cho các câu hỏi khác
 ];
 ```
 
-### Tùy chỉnh Special Questions (Câu 11-14)
-
-```javascript
-export const SPECIAL_QUESTIONS = [
-  {
-    id: 11,
-    question: "Thêm 1 điểm",
-    specialEffect: "plus",
-    points: 1
-  },
-  {
-    id: 12,
-    question: "Thêm 1 điểm",
-    specialEffect: "plus",
-    points: 1
-  },
-  {
-    id: 13,
-    question: "Trừ 1 điểm",
-    specialEffect: "minus",
-    points: -1
-  },
-  {
-    id: 14,
-    question: "Trừ 1 điểm",
-    specialEffect: "minus",
-    points: -1
-  }
-];
-```
-
-## 🎨 Tùy chỉnh giao diện
-
-### Đổi tên/màu đội
-
-Mở `src/data/gameData.js`, sửa mảng `TEAMS`:
-
-```javascript
-export const TEAMS = [
-  { id: 1, name: "Tên đội 1", color: "#FF6B6B" },
-  { id: 2, name: "Tên đội 2", color: "#4ECDC4" },
-  // ...
-];
-```
-
-### Đổi icon câu hỏi
-
-```javascript
-export const QUESTION_ICONS = [
-  "🎯", "🎪", "🎨", // ... thêm emoji khác
-];
-```
-
-## 📦 Deploy lên Vercel
-
-### Cách 1: GitHub Push
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git push -u origin main
-```
-Sau đó connect repo từ Vercel dashboard
-
-### Cách 2: Vercel CLI
-```bash
-npm install -g vercel
-vercel
-```
-
-## 🗂️ Cấu trúc thư mục
-
-```
-src/
-├── components/
-│   ├── TeamQuizGame.jsx      # Main component
-│   ├── TeamScoreboard.jsx    # Bảng điểm
-│   ├── QuestionBoard.jsx     # Bảng câu hỏi
-│   ├── QuestionModal.jsx     # Modal câu hỏi
-│   └── *.css                 # Styles
-├── data/
-│   └── gameData.js           # Câu hỏi & cấu hình
-├── App.jsx
-├── index.css
-└── main.jsx
-```
-
-## 💾 localStorage
-
-Game tự động lưu:
-- **Điểm của mỗi đội** → `quizGameScores`
-- **Câu đã mở** → `quizGameOpenedQuestions`
-
-Click **"Reset"** để xóa tất cả dữ liệu.
-
-## ✅ Lưu ý khi sử dụng
-
-- ✓ localStorage chỉ lưu trong cùng trình duyệt (private/incognito sẽ reset)
-- ✓ Mỗi tab mở mới dùng chung dữ liệu
-- ✓ Có thể export/backup JSON nếu cần lưu dài hạn
-
-## 📱 Responsive Design
-
-- ✅ Desktop (1400px+)
-- ✅ Tablet (768px - 1399px)
-- ✅ Mobile (dưới 768px)
-
-## 🤔 FAQ
-
-**Q: Làm sao khôi phục điểm nếu reload nhầm?**
-A: localStorage giữ dữ liệu tự động, chỉ cần refresh lại trang
-
-**Q: Làm sao reset game?**
-A: Click nút **"↺ Reset"** hoặc xóa localStorage:
-```javascript
-localStorage.removeItem('quizGameScores');
-localStorage.removeItem('quizGameOpenedQuestions');
-```
-
-**Q: Deploy lên Vercel mất lâu không?**
-A: Vite static build rất nhanh, thường < 1 phút
-
-## 📄 License
-
-MIT
+## 🚀 Triển khai (Deployment)
+Dự án được tối ưu hóa để triển khai nhanh chóng trên **Vercel**:
+1. Đẩy mã nguồn lên GitHub/GitLab.
+2. Kết nối kho lưu trữ với Vercel Dashboard.
+3. Vercel sẽ tự động nhận diện cấu hình Vite và triển khai chỉ trong vài giây.
 
 ---
-
-**Made with ❤️ for Team Quiz Game**
+**Phát triển bởi ❤️ dành cho cộng đồng sinh viên yêu thích lý luận.**
