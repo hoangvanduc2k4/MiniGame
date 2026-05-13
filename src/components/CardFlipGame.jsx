@@ -58,7 +58,13 @@ const CardFlipGame = () => {
     setGameStarted(true)
   }
 
-  const handleResetGame = () => {
+  const handleResetGame = (silent = false) => {
+    if (!silent && !gameEnded) {
+      if (!window.confirm("Đồng chí có chắc chắn muốn làm mới nhiệm vụ? Toàn bộ tiến trình sẽ bị xóa.")) {
+        return
+      }
+    }
+
     setGameStarted(false)
     setQuestions([])
     setAnsweredCards({})
@@ -159,7 +165,7 @@ const CardFlipGame = () => {
              "📚 Cần tăng cường học tập và rèn luyện thêm."}
           </div>
 
-          <button className="btn-socialist-restart" onClick={handleResetGame}>
+          <button className="btn-socialist-restart" onClick={() => handleResetGame(true)}>
             THỰC HIỆN LẠI ↺
           </button>
         </div>
@@ -179,9 +185,18 @@ const CardFlipGame = () => {
             <p>Chương 2: Giai cấp công nhân Việt Nam</p>
           </div>
         </div>
-        <div className="score-badge">
-          <span className="score-num">{Object.keys(answeredCards).length}</span>
-          <span className="score-total">/ {questions.length}</span>
+        <div className="header-right">
+          <div className="score-badge">
+            <span className="score-num">{Object.keys(answeredCards).length}</span>
+            <span className="score-total">/ {questions.length}</span>
+          </div>
+          <button 
+            className="btn-reset-game" 
+            onClick={() => handleResetGame(false)} 
+            title="Làm mới nhiệm vụ"
+          >
+            ↺
+          </button>
         </div>
       </header>
 
