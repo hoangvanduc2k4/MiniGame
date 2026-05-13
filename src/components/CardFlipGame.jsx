@@ -3,11 +3,21 @@ import './CardFlipGame.css'
 import { SAMPLE_QUESTIONS, QUESTION_ICONS } from '../data/gameData'
 
 const CardFlipGame = () => {
-  const [gameStarted, setGameStarted] = useState(false)
+  const [gameStarted, setGameStarted] = useState(() => {
+    return localStorage.getItem('hcm_quiz_gameStarted') === 'true'
+  })
   const [questions, setQuestions] = useState([])
-  const [answeredCards, setAnsweredCards] = useState({})
-  const [gameEnded, setGameEnded] = useState(false)
-  const [score, setScore] = useState(0)
+  const [answeredCards, setAnsweredCards] = useState(() => {
+    const saved = localStorage.getItem('hcm_quiz_answeredCards')
+    return saved ? JSON.parse(saved) : {}
+  })
+  const [gameEnded, setGameEnded] = useState(() => {
+    return localStorage.getItem('hcm_quiz_gameEnded') === 'true'
+  })
+  const [score, setScore] = useState(() => {
+    const saved = localStorage.getItem('hcm_quiz_score')
+    return saved ? parseInt(saved, 10) : 0
+  })
   
   // Modal states
   const [activeQuestionIdx, setActiveQuestionIdx] = useState(null)
@@ -24,6 +34,14 @@ const CardFlipGame = () => {
       setQuestions(initialQuestions)
     }
   }, [gameStarted])
+
+  // Save state to localStorage
+  useEffect(() => {
+    localStorage.setItem('hcm_quiz_gameStarted', gameStarted)
+    localStorage.setItem('hcm_quiz_answeredCards', JSON.stringify(answeredCards))
+    localStorage.setItem('hcm_quiz_score', score)
+    localStorage.setItem('hcm_quiz_gameEnded', gameEnded)
+  }, [gameStarted, answeredCards, score, gameEnded])
 
   // Check if all cards are answered
   useEffect(() => {
@@ -47,6 +65,11 @@ const CardFlipGame = () => {
     setGameEnded(false)
     setScore(0)
     setActiveQuestionIdx(null)
+    // Clear localStorage
+    localStorage.removeItem('hcm_quiz_gameStarted')
+    localStorage.removeItem('hcm_quiz_answeredCards')
+    localStorage.removeItem('hcm_quiz_score')
+    localStorage.removeItem('hcm_quiz_gameEnded')
   }
 
   const handleCardClick = (idx) => {
