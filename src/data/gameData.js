@@ -1,167 +1,151 @@
-// Sample questions data - 10 random MCQ questions with answers
-// You can replace these with your actual questions later
+// Questions for Mini-Game: "BẢN LĨNH CÔNG NHÂN"
+// Topic: Historical Mission of the Working Class - Scientific Socialism
 export const SAMPLE_QUESTIONS = [
   {
     id: 1,
-    question: "Theo Hồ Chí Minh, mục đích cuối cùng của việc loài người sáng tạo và phát minh ra ngôn ngữ, chữ viết, đạo đức, pháp luật... (văn hóa) là gì?",
+    question: "Về phương diện chính trị - xã hội, đặc điểm nổi bật nhất của giai cấp công nhân dưới chủ nghĩa tư bản là gì?",
     options: [
-      "Để thể hiện sự văn minh của một dân tộc.",
-      "Để thúc đẩy sự tăng trưởng kinh tế.",
-      "Vì lẽ sinh tồn cũng như mục đích của cuộc sống.",
-      "Để phục vụ nhu cầu giải trí của con người."
+      "Là lực lượng sản xuất tiên tiến nhất.",
+      "Sở hữu một phần tư liệu sản xuất của xã hội.",
+      "Không có tư liệu sản xuất, phải bán sức lao động và bị bóc lột.",
+      "Là lực lượng đông đảo nhất trong xã hội."
     ],
-    correctAnswer: "Vì lẽ sinh tồn cũng như mục đích của cuộc sống."
+    correctAnswer: "Không có tư liệu sản xuất, phải bán sức lao động và bị bóc lột.",
+    explanation: "Trong quan hệ sản xuất tư bản chủ nghĩa, công nhân là những người lao động không có sở hữu tư liệu sản xuất chủ yếu, nên buộc phải bán sức lao động để sống và bị nhà tư bản bóc lột giá trị thặng dư."
   },
   {
     id: 2,
-    question: "Câu nói nào của Hồ Chí Minh khẳng định vai trò định hướng, dẫn dắt của văn hóa đối với sự nghiệp xây dựng và bảo vệ tổ quốc?",
+    question: "Theo chủ nghĩa Mác - Lênin, sứ mệnh lịch sử tổng quát của giai cấp công nhân là gì?",
     options: [
-      "“Văn hóa là một mặt trận”.",
-      "“Văn hóa soi đường cho quốc dân đi”.",
-      "“Văn hóa phải thâm nhập vào chính trị”.",
-      "“Văn hóa là động lực của cách mạng”."
+      "Giành quyền thống trị nền kinh tế toàn cầu.",
+      "Thông qua đội tiên phong là Đảng Cộng sản, xóa bỏ chủ nghĩa tư bản, xây dựng chủ nghĩa xã hội và chủ nghĩa cộng sản.",
+      "Lật đổ chế độ phong kiến, xây dựng chế độ tư bản.",
+      "Xóa bỏ mọi tôn giáo và ranh giới quốc gia trên thế giới."
     ],
-    correctAnswer: "“Văn hóa soi đường cho quốc dân đi”."
+    correctAnswer: "Thông qua đội tiên phong là Đảng Cộng sản, xóa bỏ chủ nghĩa tư bản, xây dựng chủ nghĩa xã hội và chủ nghĩa cộng sản.",
+    explanation: "Sứ mệnh của họ là lãnh đạo nhân dân lao động đấu tranh xóa bỏ chế độ bóc lột, giải phóng bản thân và toàn xã hội, tiến tới xây dựng xã hội cộng sản văn minh."
   },
   {
     id: 3,
-    question: "Nền văn hóa mới mà Hồ Chí Minh xác định xây dựng gồm có 3 đặc trưng (tính chất) cốt lõi nào?",
+    question: "Nhân tố CHỦ QUAN quan trọng nhất để giai cấp công nhân thực hiện thắng lợi sứ mệnh lịch sử của mình là gì?",
     options: [
-      "Dân tộc – Khoa học – Đại chúng.",
-      "Dân tộc – Hiện đại – Nhân văn.",
-      "Độc lập – Tự do – Hạnh phúc.",
-      "Truyền thống – Tiến bộ – Hội nhập."
+      "Sự phát triển của nền đại công nghiệp.",
+      "Sự gia tăng nhanh chóng về số lượng công nhân.",
+      "Sự khủng hoảng của chủ nghĩa tư bản.",
+      "Sự ra đời và vai trò lãnh đạo của Đảng Cộng sản."
     ],
-    correctAnswer: "Dân tộc – Khoa học – Đại chúng."
+    correctAnswer: "Sự ra đời và vai trò lãnh đạo của Đảng Cộng sản.",
+    explanation: "Đảng Cộng sản là đội tiên phong, là hạt nhân chính trị quan trọng nhất. Chỉ khi có Đảng lãnh đạo, phong trào công nhân mới chuyển từ tự phát sang tự giác."
   },
   {
     id: 4,
-    question: "Hiện tượng “Fake news” (tin giả) và các nội dung mê tín dị đoan trên mạng xã hội hiện nay vi phạm trực tiếp tính chất nào của nền văn hóa mới?",
+    question: "So với thế kỷ XIX, giai cấp công nhân hiện nay có xu hướng biến đổi nổi bật nào do tác động của Cách mạng khoa học công nghệ?",
     options: [
-      "Tính Dân tộc.",
-      "Tính Khoa học.",
-      "Tính Đại chúng.",
-      "Tính Nhân văn."
+      "Xu hướng \"trí tuệ hóa\" và \"trung lưu hóa\".",
+      "Xu hướng bần cùng hóa tuyệt đối ngày càng tăng.",
+      "Xu hướng giảm dần về chất lượng tay nghề.",
+      "Hao phí lao động chủ yếu thuần túy là sức cơ bắp."
     ],
-    correctAnswer: "Tính Khoa học."
+    correctAnswer: "Xu hướng \"trí tuệ hóa\" và \"trung lưu hóa\".",
+    explanation: "Ngày nay, hao phí lao động của công nhân chủ yếu là trí lực (\"công nhân áo trắng\", \"công nhân tri thức\"), đồng thời một bộ phận công nhân đã có cổ phần, dẫn đến xu hướng trung lưu hóa gia tăng."
   },
   {
     id: 5,
-    question: "Trào lưu “Flexing” (khoe khoang tài sản xa xỉ quá mức) và lối sống thực dụng trên mạng xã hội đi ngược lại đức tính nào trong tư tưởng đạo đức Hồ Chí Minh?",
+    question: "Dù đời sống có được cải thiện, nhưng ở các nước tư bản hiện nay, giai cấp công nhân vẫn có điểm tương đồng cốt lõi nào so với thế kỷ XIX?",
     options: [
-      "Lòng dũng cảm và kiên định.",
-      "Tinh thần tự lực tự cường.",
-      "Đức tính Cần và Kiệm.",
-      "Ý chí vượt khó vươn lên."
+      "Vẫn làm việc chủ yếu bằng tay chân.",
+      "Vẫn bị giai cấp tư sản bóc lột giá trị thặng dư.",
+      "Vẫn không được tham gia vào các tổ chức chính trị.",
+      "Vẫn không có khả năng sở hữu bất kỳ tài sản nào."
     ],
-    correctAnswer: "Đức tính Cần và Kiệm."
+    correctAnswer: "Vẫn bị giai cấp tư sản bóc lột giá trị thặng dư.",
+    explanation: "Dù đời sống được nâng cao, quan hệ sản xuất tư bản chủ nghĩa với chế độ sở hữu tư nhân vẫn tồn tại, do đó tình trạng công nhân bị bóc lột giá trị thặng dư vẫn là nguyên nhân cốt lõi của xung đột giai cấp hiện nay."
   },
   {
     id: 6,
-    question: "Hồ Chí Minh coi loại “giặc” nào là nguồn gốc sinh ra các căn bệnh lãng phí, tham ô, danh lợi và sự lệch lạc đạo đức trên mạng xã hội hiện nay?",
+    question: "Giai cấp công nhân Việt Nam ra đời trong hoàn cảnh lịch sử nào?",
     options: [
-      "Giặc ngoại xâm.",
-      "Giặc đói.",
-      "Giặc dốt.",
-      "Giặc nội xâm (Chủ nghĩa cá nhân)."
+      "Từ sự phát triển của nền công nghiệp tư bản bản địa.",
+      "Sau khi Đảng Cộng sản Việt Nam được thành lập (1930).",
+      "Gắn liền với chính sách khai thác thuộc địa của thực dân Pháp.",
+      "Trong thời kỳ đổi mới, công nghiệp hóa - hiện đại hóa đất nước."
     ],
-    correctAnswer: "Giặc nội xâm (Chủ nghĩa cá nhân)."
+    correctAnswer: "Gắn liền với chính sách khai thác thuộc địa của thực dân Pháp.",
+    explanation: "Công nhân Việt Nam xuất hiện từ đầu thế kỷ XX, là sản phẩm trực tiếp từ quá trình \"khai thác thuộc địa\" của thực dân Pháp, phát triển trong một nước nông nghiệp lạc hậu."
   },
   {
     id: 7,
-    question: "Hành vi “Bạo lực mạng” (cyberbullying), mạt sát cá nhân đi ngược lại phẩm chất đạo đức quan trọng nào trong tư tưởng Hồ Chí Minh?",
+    question: "Đâu là \"nghịch lý\" tạo nên ưu thế chính trị tuyệt đối của giai cấp công nhân Việt Nam so với giai cấp tư sản bản địa?",
     options: [
-      "Sự trung thành vô hạn với tổ quốc.",
-      "Tình thương yêu con người bao la.",
-      "Tinh thần ham học hỏi suốt đời.",
-      "Ý chí quyết chiến quyết thắng."
+      "Có số lượng đông đảo nhất ngay từ khi mới ra đời.",
+      "Ra đời TRƯỚC giai cấp tư sản Việt Nam.",
+      "Được đào tạo kỹ thuật công nghệ cao từ rất sớm.",
+      "Nhận được sự viện trợ tài chính khổng lồ từ quốc tế."
     ],
-    correctAnswer: "Tình thương yêu con người bao la."
+    correctAnswer: "Ra đời TRƯỚC giai cấp tư sản Việt Nam.",
+    explanation: "Trái ngược với phương Tây (tư sản đẻ ra công nhân), công nhân Việt Nam ra đời trước cả tư sản Việt Nam do quá trình khai thác của Pháp. Vừa sinh ra họ đã đối kháng trực tiếp với tư bản ngoại bang, không bị thỏa hiệp nên vô cùng kiên quyết cách mạng."
   },
   {
     id: 8,
-    question: "Giải pháp dùng AI và thuật toán để đẩy các nội dung “Người tốt việc tốt” lên xu hướng (Trending) là biểu hiện của phương châm nào?",
+    question: "Do đại bộ phận xuất thân từ tầng lớp nào mà giai cấp công nhân Việt Nam có lợi thế tự nhiên trong việc xây dựng khối đại đoàn kết toàn dân tộc?",
     options: [
-      "Chỉ tập trung vào việc xử phạt hành chính.",
-      "“Lấy cái đẹp dẹp cái xấu” (Xây đi đôi với Chống).",
-      "Hội nhập văn hóa thế giới mù quáng.",
-      "Xây dựng tâm lý tự ti trước công nghệ."
+      "Tầng lớp trí thức, tiểu tư sản.",
+      "Giai cấp tư sản dân tộc.",
+      "Thợ thủ công thành thị.",
+      "Giai cấp nông dân."
     ],
-    correctAnswer: "“Lấy cái đẹp dẹp cái xấu” (Xây đi đôi với Chống)."
+    correctAnswer: "Giai cấp nông dân.",
+    explanation: "Phần lớn công nhân Việt Nam thời kỳ đầu là những người nông dân bị mất ruộng đất. Do đó, họ có mối quan hệ máu thịt và xây dựng được khối liên minh \"công - nông\" tự nhiên, bền chặt vô địch."
   },
   {
     id: 9,
-    question: "Để không bị “lệch chuẩn” khi tiếp xúc với các trào lưu văn hóa nước ngoài, chúng ta cần tuân thủ nguyên tắc nào của Hồ Chí Minh?",
+    question: "Về phương diện kinh tế, sứ mệnh cốt lõi của giai cấp công nhân Việt Nam hiện nay là gì?",
     options: [
-      "Tiếp thu toàn bộ để nhanh chóng hiện đại hóa.",
-      "Đóng cửa hoàn toàn để bảo vệ bản sắc truyền thống.",
-      "Tiếp thu có chọn lọc tinh hoa nhân loại, lấy văn hóa dân tộc làm gốc.",
-      "Chỉ học tập văn hóa phương Đông vì sự tương đồng lịch sử."
+      "Giữ vững bản chất giai cấp công nhân của Đảng.",
+      "Bảo vệ sự trong sáng của chủ nghĩa Mác - Lênin.",
+      "Là lực lượng đi đầu trong sự nghiệp đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước.",
+      "Xây dựng nền văn hóa tiên tiến đậm đà bản sắc dân tộc."
     ],
-    correctAnswer: "Tiếp thu có chọn lọc tinh hoa nhân loại, lấy văn hóa dân tộc làm gốc."
+    correctAnswer: "Là lực lượng đi đầu trong sự nghiệp đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước.",
+    explanation: "Về kinh tế, công nhân phát huy vai trò nòng cốt, đi đầu trong sự nghiệp CNH - HĐH gắn với phát triển kinh tế tri thức và bảo vệ tài nguyên môi trường."
   },
   {
     id: 10,
-    question: "Theo tư tưởng Hồ Chí Minh, để làm sạch không gian mạng, mỗi công dân mạng cần có tinh thần trách nhiệm như thế nào?",
+    question: "Theo tinh thần của Đại hội XIII, phương hướng xây dựng giai cấp công nhân Việt Nam hiện nay nhấn mạnh việc xây dựng lực lượng công nhân như thế nào?",
     options: [
-      "Chỉ nên im lặng và lướt qua các nội dung xấu để tránh rắc rối.",
-      "Trở thành một “chiến sĩ văn hóa”: biết sàng lọc thông tin, lan tỏa cái đẹp và dũng cảm report cái xấu.",
-      "Tích cực tranh luận, chửi bới lại những người có ý kiến trái chiều.",
-      "Chỉ chia sẻ những thông tin liên quan đến lợi ích cá nhân mình."
+      "Tập trung tăng nhanh số lượng để làm các ngành gia công giá rẻ.",
+      "Xây dựng giai cấp công nhân hiện đại, lớn mạnh, có bản lĩnh chính trị vững vàng.",
+      "Trí thức hóa toàn bộ công nhân thành kỹ sư.",
+      "Chuyển toàn bộ công nhân sang làm việc cho khu vực kinh tế nhà nước."
     ],
-    correctAnswer: "Trở thành một “chiến sĩ văn hóa”: biết sàng lọc thông tin, lan tỏa cái đẹp và dũng cảm report cái xấu."
+    correctAnswer: "Xây dựng giai cấp công nhân hiện đại, lớn mạnh, có bản lĩnh chính trị vững vàng.",
+    explanation: "Đại hội XIII nhấn mạnh bên cạnh việc phát triển nhanh về số lượng, phải nâng cao chất lượng, có trình độ học vấn, chuyên môn kỹ năng và đặc biệt là xây dựng công nhân \"lớn mạnh, hiện đại\" với giác ngộ giai cấp và bản lĩnh chính trị vững vàng."
   }
 ];
 
-// 2 REWARD QUESTIONS - Auto cộng 1 điểm (không cần trả lời)
-export const REWARD_QUESTIONS = [
-  {
-    id: 11,
-    question: "🎁 Thưởng: Cộng 1 điểm!",
-    isReward: true,
-    points: 1
-  },
-  {
-    id: 12,
-    question: "🎁 Thưởng: Cộng 1 điểm!",
-    isReward: true,
-    points: 1
-  }
-]
-
-// 2 PENALTY QUESTIONS - Auto trừ 1 điểm (không cần trả lời)
-export const PENALTY_QUESTIONS = [
-  {
-    id: 13,
-    question: "⚡ Phạt: Trừ 1 điểm!",
-    isPenalty: true,
-    points: -1
-  },
-  {
-    id: 14,
-    question: "⚡ Phạt: Trừ 1 điểm!",
-    isPenalty: true,
-    points: -1
-  }
-]
-
-// Combine all special questions
-export const SPECIAL_QUESTIONS = [...REWARD_QUESTIONS, ...PENALTY_QUESTIONS];
-
-// Team definitions
+// Team definitions - using revolutionary colors
 export const TEAMS = [
-  { id: 1, name: "Team 1", color: "#DA251D" },
-  { id: 2, name: "Team 2", color: "#A50F08" },
-  { id: 3, name: "Team 3", color: "#FFD700" },
-  { id: 4, name: "Team 4", color: "#E0A500" },
-  { id: 5, name: "Team 6", color: "#C8102E" },
-  { id: 6, name: "Team 7", color: "#8B0000" },
-  { id: 7, name: "Team 8", color: "#FF9900" }
+  { id: 1, name: "Đội 1", color: "#DA251D" },
+  { id: 2, name: "Đội 2", color: "#A50F08" },
+  { id: 3, name: "Đội 3", color: "#C8102E" },
+  { id: 4, name: "Đội 4", color: "#8B0000" }
 ];
 
-// Icons/Emojis for question cards - Patriotic/Ideological themes
+// Icons/Emojis for question cards - Socialist/Workers themes
 export const QUESTION_ICONS = [
-  "🇻🇳", "🚩", "☭", "⭐", "🕊️", "📜", "🖋️", "🏫",
-  "📖", "✊", "🏗️", "🚜", "🏭", "⚓"
+  "🎁", // Gift
+  "🏆", // Trophy
+  "🎖️", // Medal
+  "💡", // Lightbulb
+  "📖", // Book
+  "⭐", // Star
+  "🎓", // Graduation Cap
+  "📜", // Scroll
+  "🔍", // Magnifying Glass
+  "🔥"  // Torch
 ];
 
+// Special questions (optional)
+export const SPECIAL_QUESTIONS = [];
+export const REWARD_QUESTIONS = [];
+export const PENALTY_QUESTIONS = [];

@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './App.css'
-import TeamQuizGame from './components/TeamQuizGame'
+import CardFlipGame from './components/CardFlipGame'
 
 function App() {
   return (
     <div className="app">
-      <TeamQuizGame />
+      <CardFlipGame />
     </div>
   )
 }
