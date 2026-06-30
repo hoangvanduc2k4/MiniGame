@@ -63,7 +63,7 @@ const SimpleQuizGame = () => {
       <div className="simple-quiz-container start-screen">
         <div className="start-content">
           <h1>🎯 Quiz 10 Câu Hỏi</h1>
-          <p className="subtitle">Trả lời 10 câu hỏi về Tư tưởng Hồ Chí Minh</p>
+          <p className="subtitle">Trả lời 10 câu hỏi về Lịch Sử Đảng Cộng Sản Việt Nam</p>
           
           <div className="rules">
             <h3>Cách chơi:</h3>

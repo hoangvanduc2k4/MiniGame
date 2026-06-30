@@ -1,125 +1,135 @@
 // Questions for Mini-Game: "BẢN LĨNH CÔNG NHÂN"
-// Topic: Historical Mission of the Working Class - Scientific Socialism
+// Topic: Đường lối cách mạng của Đảng Cộng sản Việt Nam (1954 - 1975)
 export const SAMPLE_QUESTIONS = [
   {
     id: 1,
-    question: "Về phương diện chính trị - xã hội, đặc điểm nổi bật nhất của giai cấp công nhân dưới chủ nghĩa tư bản là gì?",
+    question: "Đại hội III (1960) xác định cách mạng miền Bắc giữ vai trò gì đối với cách mạng cả nước?",
     options: [
-      "Là lực lượng sản xuất tiên tiến nhất.",
-      "Sở hữu một phần tư liệu sản xuất của xã hội.",
-      "Không có tư liệu sản xuất, phải bán sức lao động và bị bóc lột.",
-      "Là lực lượng đông đảo nhất trong xã hội."
+      "Quyết định trực tiếp.",
+      "Quyết định nhất.",
+      "Vai trò hỗ trợ.",
+      "Vai trò tạm thời."
     ],
-    correctAnswer: "Không có tư liệu sản xuất, phải bán sức lao động và bị bóc lột.",
-    explanation: "Trong quan hệ sản xuất tư bản chủ nghĩa, công nhân là những người lao động không có sở hữu tư liệu sản xuất chủ yếu, nên buộc phải bán sức lao động để sống và bị nhà tư bản bóc lột giá trị thặng dư."
+    correctAnswer: "Quyết định nhất.",
+    explanation: "Đại hội III (1960) xác định cách mạng xã hội chủ nghĩa ở miền Bắc giữ vai trò quyết định nhất đối với sự phát triển của toàn bộ cách mạng Việt Nam.",
+    icon: "🚩"
   },
   {
     id: 2,
-    question: "Theo chủ nghĩa Mác - Lênin, sứ mệnh lịch sử tổng quát của giai cấp công nhân là gì?",
+    question: "Cách mạng dân tộc dân chủ nhân dân ở miền Nam giữ vai trò gì đối với sự nghiệp giải phóng miền Nam?",
     options: [
-      "Giành quyền thống trị nền kinh tế toàn cầu.",
-      "Thông qua đội tiên phong là Đảng Cộng sản, xóa bỏ chủ nghĩa tư bản, xây dựng chủ nghĩa xã hội và chủ nghĩa cộng sản.",
-      "Lật đổ chế độ phong kiến, xây dựng chế độ tư bản.",
-      "Xóa bỏ mọi tôn giáo và ranh giới quốc gia trên thế giới."
+      "Quyết định nhất.",
+      "Quyết định trực tiếp.",
+      "Quyết định gián tiếp.",
+      "Vai trò hậu phương."
     ],
-    correctAnswer: "Thông qua đội tiên phong là Đảng Cộng sản, xóa bỏ chủ nghĩa tư bản, xây dựng chủ nghĩa xã hội và chủ nghĩa cộng sản.",
-    explanation: "Sứ mệnh của họ là lãnh đạo nhân dân lao động đấu tranh xóa bỏ chế độ bóc lột, giải phóng bản thân và toàn xã hội, tiến tới xây dựng xã hội cộng sản văn minh."
+    correctAnswer: "Quyết định trực tiếp.",
+    explanation: "Cách mạng dân tộc dân chủ nhân dân ở miền Nam giữ vai trò quyết định trực tiếp đối với sự nghiệp giải phóng miền Nam khỏi ách thống trị của đế quốc Mỹ và tay sai.",
+    icon: "✊"
   },
   {
     id: 3,
-    question: "Nhân tố CHỦ QUAN quan trọng nhất để giai cấp công nhân thực hiện thắng lợi sứ mệnh lịch sử của mình là gì?",
+    question: "Mục tiêu chung của cách mạng cả nước được xác định tại Đại hội III (1960) là gì?",
     options: [
-      "Sự phát triển của nền đại công nghiệp.",
-      "Sự gia tăng nhanh chóng về số lượng công nhân.",
-      "Sự khủng hoảng của chủ nghĩa tư bản.",
-      "Sự ra đời và vai trò lãnh đạo của Đảng Cộng sản."
+      "Chỉ xây dựng chủ nghĩa xã hội.",
+      "Chỉ giải phóng miền Nam.",
+      "Giải phóng miền Nam, hòa bình, thống nhất đất nước.",
+      "Thực hiện cải cách ruộng đất."
     ],
-    correctAnswer: "Sự ra đời và vai trò lãnh đạo của Đảng Cộng sản.",
-    explanation: "Đảng Cộng sản là đội tiên phong, là hạt nhân chính trị quan trọng nhất. Chỉ khi có Đảng lãnh đạo, phong trào công nhân mới chuyển từ tự phát sang tự giác."
+    correctAnswer: "Giải phóng miền Nam, hòa bình, thống nhất đất nước.",
+    explanation: "Mục tiêu chung của cách mạng cả nước là tăng cường đoàn kết toàn dân, kiên quyết đấu tranh giữ vững hòa bình, đẩy mạnh cách mạng xã hội chủ nghĩa ở miền Bắc, đồng thời đẩy mạnh cách mạng dân tộc dân chủ nhân dân ở miền Nam, thực hiện thống nhất nước nhà trên cơ sở độc lập và dân chủ.",
+    icon: "🕊️"
   },
   {
     id: 4,
-    question: "So với thế kỷ XIX, giai cấp công nhân hiện nay có xu hướng biến đổi nổi bật nào do tác động của Cách mạng khoa học công nghệ?",
+    question: "Đến năm 1965, lượng vật chất miền Bắc chi viện cho miền Nam tăng gấp bao nhiêu lần so với năm 1961?",
     options: [
-      "Xu hướng \"trí tuệ hóa\" và \"trung lưu hóa\".",
-      "Xu hướng bần cùng hóa tuyệt đối ngày càng tăng.",
-      "Xu hướng giảm dần về chất lượng tay nghề.",
-      "Hao phí lao động chủ yếu thuần túy là sức cơ bắp."
+      "5 lần",
+      "9 lần",
+      "10 lần",
+      "15 lần"
     ],
-    correctAnswer: "Xu hướng \"trí tuệ hóa\" và \"trung lưu hóa\".",
-    explanation: "Ngày nay, hao phí lao động của công nhân chủ yếu là trí lực (\"công nhân áo trắng\", \"công nhân tri thức\"), đồng thời một bộ phận công nhân đã có cổ phần, dẫn đến xu hướng trung lưu hóa gia tăng."
+    correctAnswer: "9 lần",
+    explanation: "Đến năm 1965, lượng vật chất miền Bắc chi viện cho miền Nam đã tăng gấp 9 lần so với năm 1961, thể hiện vai trò hậu phương vững chắc của miền Bắc.",
+    icon: "🚚"
   },
   {
     id: 5,
-    question: "Dù đời sống có được cải thiện, nhưng ở các nước tư bản hiện nay, giai cấp công nhân vẫn có điểm tương đồng cốt lõi nào so với thế kỷ XIX?",
+    question: "Thắng lợi của cuộc kháng chiến chống Mỹ (1975) đã mở ra kỷ nguyên nào cho dân tộc?",
     options: [
-      "Vẫn làm việc chủ yếu bằng tay chân.",
-      "Vẫn bị giai cấp tư sản bóc lột giá trị thặng dư.",
-      "Vẫn không được tham gia vào các tổ chức chính trị.",
-      "Vẫn không có khả năng sở hữu bất kỳ tài sản nào."
+      "Độc lập, thống nhất, cả nước đi lên chủ nghĩa xã hội.",
+      "Độc lập dân tộc và người cày có ruộng.",
+      "Cách mạng dân tộc dân chủ nhân dân.",
+      "Thời kỳ quá độ lên chủ nghĩa cộng sản."
     ],
-    correctAnswer: "Vẫn bị giai cấp tư sản bóc lột giá trị thặng dư.",
-    explanation: "Dù đời sống được nâng cao, quan hệ sản xuất tư bản chủ nghĩa với chế độ sở hữu tư nhân vẫn tồn tại, do đó tình trạng công nhân bị bóc lột giá trị thặng dư vẫn là nguyên nhân cốt lõi của xung đột giai cấp hiện nay."
+    correctAnswer: "Độc lập, thống nhất, cả nước đi lên chủ nghĩa xã hội.",
+    explanation: "Đại thắng mùa Xuân 1975 đã chấm dứt ách thống trị của chủ nghĩa thực dân, mở ra kỷ nguyên mới: kỷ nguyên độc lập, thống nhất, cả nước đi lên chủ nghĩa xã hội.",
+    icon: "🏆"
   },
   {
     id: 6,
-    question: "Giai cấp công nhân Việt Nam ra đời trong hoàn cảnh lịch sử nào?",
+    question: "Đặc điểm nổi bật nhất của đường lối Đảng giai đoạn 1954–1975 là gì?",
     options: [
-      "Từ sự phát triển của nền công nghiệp tư bản bản địa.",
-      "Sau khi Đảng Cộng sản Việt Nam được thành lập (1930).",
-      "Gắn liền với chính sách khai thác thuộc địa của thực dân Pháp.",
-      "Trong thời kỳ đổi mới, công nghiệp hóa - hiện đại hóa đất nước."
+      "Chỉ tập trung đấu tranh vũ trang.",
+      "Tiến hành đồng thời hai chiến lược cách mạng ở hai miền.",
+      "Chỉ tập trung xây dựng kinh tế miền Bắc.",
+      "Ưu tiên đấu tranh ngoại giao."
     ],
-    correctAnswer: "Gắn liền với chính sách khai thác thuộc địa của thực dân Pháp.",
-    explanation: "Công nhân Việt Nam xuất hiện từ đầu thế kỷ XX, là sản phẩm trực tiếp từ quá trình \"khai thác thuộc địa\" của thực dân Pháp, phát triển trong một nước nông nghiệp lạc hậu."
+    correctAnswer: "Tiến hành đồng thời hai chiến lược cách mạng ở hai miền.",
+    explanation: "Đảng đã đề ra đường lối độc đáo, sáng tạo: tiến hành đồng thời cách mạng xã hội chủ nghĩa ở miền Bắc và cách mạng dân tộc dân chủ nhân dân ở miền Nam.",
+    icon: "💡"
   },
   {
     id: 7,
-    question: "Đâu là \"nghịch lý\" tạo nên ưu thế chính trị tuyệt đối của giai cấp công nhân Việt Nam so với giai cấp tư sản bản địa?",
+    question: "Chiến dịch nào đã kết thúc oanh liệt cuộc kháng chiến chống Mỹ vào năm 1975?",
     options: [
-      "Có số lượng đông đảo nhất ngay từ khi mới ra đời.",
-      "Ra đời TRƯỚC giai cấp tư sản Việt Nam.",
-      "Được đào tạo kỹ thuật công nghệ cao từ rất sớm.",
-      "Nhận được sự viện trợ tài chính khổng lồ từ quốc tế."
+      "Chiến dịch Tây Nguyên.",
+      "Chiến dịch Huế - Đà Nẵng.",
+      "Chiến dịch Hồ Chí Minh.",
+      "Chiến dịch Đường 9 - Nam Lào."
     ],
-    correctAnswer: "Ra đời TRƯỚC giai cấp tư sản Việt Nam.",
-    explanation: "Trái ngược với phương Tây (tư sản đẻ ra công nhân), công nhân Việt Nam ra đời trước cả tư sản Việt Nam do quá trình khai thác của Pháp. Vừa sinh ra họ đã đối kháng trực tiếp với tư bản ngoại bang, không bị thỏa hiệp nên vô cùng kiên quyết cách mạng."
+    correctAnswer: "Chiến dịch Hồ Chí Minh.",
+    explanation: "Chiến dịch Hồ Chí Minh lịch sử (26/4 - 30/4/1975) là chiến dịch cuối cùng, giải phóng hoàn toàn miền Nam, thống nhất đất nước.",
+    icon: "🔥"
   },
   {
     id: 8,
-    question: "Do đại bộ phận xuất thân từ tầng lớp nào mà giai cấp công nhân Việt Nam có lợi thế tự nhiên trong việc xây dựng khối đại đoàn kết toàn dân tộc?",
+    question: "Theo giáo trình, nhân tố hàng đầu quyết định mọi thắng lợi của cách mạng Việt Nam là gì?",
     options: [
-      "Tầng lớp trí thức, tiểu tư sản.",
-      "Giai cấp tư sản dân tộc.",
-      "Thợ thủ công thành thị.",
-      "Giai cấp nông dân."
+      "Sự lãnh đạo đúng đắn của Đảng.",
+      "Sự giúp đỡ của các nước anh em.",
+      "Địa hình rừng núi hiểm trở.",
+      "Vũ khí hiện đại."
     ],
-    correctAnswer: "Giai cấp nông dân.",
-    explanation: "Phần lớn công nhân Việt Nam thời kỳ đầu là những người nông dân bị mất ruộng đất. Do đó, họ có mối quan hệ máu thịt và xây dựng được khối liên minh \"công - nông\" tự nhiên, bền chặt vô địch."
+    correctAnswer: "Sự lãnh đạo đúng đắn của Đảng.",
+    explanation: "Sự lãnh đạo đúng đắn của Đảng Cộng sản Việt Nam là nhân tố hàng đầu, quyết định mọi thắng lợi của cách mạng Việt Nam.",
+    icon: "🔑"
   },
   {
     id: 9,
-    question: "Về phương diện kinh tế, sứ mệnh cốt lõi của giai cấp công nhân Việt Nam hiện nay là gì?",
+    question: "Một trong những bài học kinh nghiệm về lãnh đạo của Đảng là giữ vững tinh thần gì?",
     options: [
-      "Giữ vững bản chất giai cấp công nhân của Đảng.",
-      "Bảo vệ sự trong sáng của chủ nghĩa Mác - Lênin.",
-      "Là lực lượng đi đầu trong sự nghiệp đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước.",
-      "Xây dựng nền văn hóa tiên tiến đậm đà bản sắc dân tộc."
+      "Chờ đợi thời cơ.",
+      "Phụ thuộc vào bên ngoài.",
+      "Độc lập, tự chủ và sáng tạo.",
+      "Chỉ tập trung sức mạnh quân sự."
     ],
-    correctAnswer: "Là lực lượng đi đầu trong sự nghiệp đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước.",
-    explanation: "Về kinh tế, công nhân phát huy vai trò nòng cốt, đi đầu trong sự nghiệp CNH - HĐH gắn với phát triển kinh tế tri thức và bảo vệ tài nguyên môi trường."
+    correctAnswer: "Độc lập, tự chủ và sáng tạo.",
+    explanation: "Đảng luôn giữ vững tinh thần độc lập, tự chủ, tự lực tự cường và sáng tạo trong việc hoạch định và thực hiện đường lối cách mạng phù hợp với thực tiễn Việt Nam.",
+    icon: "🧠"
   },
   {
     id: 10,
-    question: "Theo tinh thần của Đại hội XIII, phương hướng xây dựng giai cấp công nhân Việt Nam hiện nay nhấn mạnh việc xây dựng lực lượng công nhân như thế nào?",
+    question: "Thắng lợi năm 1975 đã chấm dứt ách thống trị của loại hình thực dân nào tại miền Nam?",
     options: [
-      "Tập trung tăng nhanh số lượng để làm các ngành gia công giá rẻ.",
-      "Xây dựng giai cấp công nhân hiện đại, lớn mạnh, có bản lĩnh chính trị vững vàng.",
-      "Trí thức hóa toàn bộ công nhân thành kỹ sư.",
-      "Chuyển toàn bộ công nhân sang làm việc cho khu vực kinh tế nhà nước."
+      "Chủ nghĩa thực dân cũ.",
+      "Chủ nghĩa thực dân mới.",
+      "Chủ nghĩa phát xít.",
+      "Chủ nghĩa phong kiến."
     ],
-    correctAnswer: "Xây dựng giai cấp công nhân hiện đại, lớn mạnh, có bản lĩnh chính trị vững vàng.",
-    explanation: "Đại hội XIII nhấn mạnh bên cạnh việc phát triển nhanh về số lượng, phải nâng cao chất lượng, có trình độ học vấn, chuyên môn kỹ năng và đặc biệt là xây dựng công nhân \"lớn mạnh, hiện đại\" với giác ngộ giai cấp và bản lĩnh chính trị vững vàng."
+    correctAnswer: "Chủ nghĩa thực dân mới.",
+    explanation: "Thắng lợi vĩ đại năm 1975 đã chấm dứt hoàn toàn ách thống trị của chủ nghĩa thực dân mới của đế quốc Mỹ tại miền Nam Việt Nam.",
+    icon: "⛓️"
   }
 ];
 

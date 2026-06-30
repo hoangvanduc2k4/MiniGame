@@ -241,7 +241,7 @@ const TeamQuizGame = () => {
           <div className="portrait-container">
             <img src={bacHoReal} alt="Chủ tịch Hồ Chí Minh" className="bac-ho-portrait" />
           </div>
-          <h1>Tư tưởng Hồ Chí Minh</h1>
+          <h1>Lịch Sử Đảng Cộng Sản Việt Nam</h1>
           <p className="thematic-quote">"Không có gì quý hơn độc lập, tự do"</p>
           <p>Trò chơi quiz đội nhóm - Thử thách kiến thức</p>
 
@@ -284,7 +284,7 @@ const TeamQuizGame = () => {
       </div>
       <header className="game-header">
         <div className="header-content">
-          <h1>Tư tưởng Hồ Chí Minh</h1>
+          <h1>Lịch Sử Đảng Cộng Sản Việt Nam</h1>
 
           <div className="game-controls">
             <button className="btn-reset" onClick={handleResetGame}>

@@ -22,6 +22,7 @@ const CardFlipGame = () => {
   // Modal states
   const [activeQuestionIdx, setActiveQuestionIdx] = useState(null)
   const [wrongOptions, setWrongOptions] = useState([])
+  const [showErrorPopup, setShowErrorPopup] = useState(false)
 
   // Initialize questions
   useEffect(() => {
@@ -29,7 +30,7 @@ const CardFlipGame = () => {
       const initialQuestions = SAMPLE_QUESTIONS.map((q, idx) => ({
         ...q,
         id: idx,
-        icon: QUESTION_ICONS[idx % QUESTION_ICONS.length]
+        icon: q.icon || QUESTION_ICONS[idx % QUESTION_ICONS.length]
       }))
       setQuestions(initialQuestions)
     }
@@ -82,6 +83,7 @@ const CardFlipGame = () => {
     if (!answeredCards[idx]) {
       setActiveQuestionIdx(idx)
       setWrongOptions([])
+      setShowErrorPopup(false)
     }
   }
 
@@ -109,7 +111,7 @@ const CardFlipGame = () => {
       // They must click "TIẾP TỤC NHIỆM VỤ" to close it.
     } else {
       // Wrong answer
-      alert("❌ Sai rồi! Hãy thử lại.")
+      setShowErrorPopup(true)
       setWrongOptions(prev => [...prev, option])
     }
   }
@@ -123,8 +125,8 @@ const CardFlipGame = () => {
           <div className="emblem-container">
             <div className="star-emblem">⭐</div>
           </div>
-          <h1 className="main-title">Chủ Nghĩa Xã Hội Khoa Học</h1>
-          <h2 className="sub-title">Sứ Mệnh Lịch Sử Giai Cấp Công Nhân</h2>
+          <h1 className="main-title">Lịch Sử Đảng Cộng Sản Việt Nam</h1>
+          <h2 className="sub-title">Đường Lối Cách Mạng Giai Đoạn 1954 - 1975</h2>
           
           <div className="info-box">
             <p>Chào mừng đồng chí đến với thử thách kiến thức cách mạng.</p>
@@ -182,7 +184,7 @@ const CardFlipGame = () => {
           <span className="party-star">⭐</span>
           <div>
             <h1>Hệ Thống Trắc Nghiệm Lý Luận</h1>
-            <p>Chương 2: Giai cấp công nhân Việt Nam</p>
+            <p>Đường lối cách mạng giai đoạn 1954 - 1975</p>
           </div>
         </div>
         <div className="header-right">
@@ -278,6 +280,20 @@ const CardFlipGame = () => {
                  </button>
                )}
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Error Popup */}
+      {showErrorPopup && (
+        <div className="error-popup-backdrop" onClick={() => setShowErrorPopup(false)}>
+          <div className="error-popup-content" onClick={e => e.stopPropagation()}>
+            <span className="error-popup-icon">❌</span>
+            <h3>CHƯA CHÍNH XÁC!</h3>
+            <p>Đồng chí hãy suy nghĩ thêm để tìm ra câu trả lời đúng.</p>
+            <button className="btn-error-close" onClick={() => setShowErrorPopup(false)}>
+              THỬ LẠI
+            </button>
           </div>
         </div>
       )}
